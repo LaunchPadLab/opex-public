@@ -1,8 +1,8 @@
 # Operational Excellence
 
-- [Summary](#Summary)
-- [Projects](#Projects)
-- [Presentations](#Presentations)
+- [Summary](#summary)
+- [Projects](#projects)
+- [Presentations](#presentations)
 
 ## Summary
 
