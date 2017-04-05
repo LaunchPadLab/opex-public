@@ -38,4 +38,4 @@ Project | Language | Visibility | Description
 [Open Sesame](https://github.com/LaunchPadLab/opensesame) | Bash | Internal | Secure secret management
 
 ## Presentations
-- Linting: [Presentation](https://gitpitch.com/LaunchPadLab/linting)	· [Repo](https://github.com/LaunchPadLab/linting)	· [Video]()
+- Linting: [Presentation](https://gitpitch.com/LaunchPadLab/linting)	· [Repo](https://github.com/LaunchPadLab/linting)	· [Video](https://drive.google.com/open?id=0B4d5JSnfGUZ0UUtTTWY5d05MdDA)
