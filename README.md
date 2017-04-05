@@ -1,5 +1,9 @@
 # Operational Excellence
 
+- [Summary](#Summary)
+- [Projects](#Projects)
+- [Presentations](#Presentations)
+
 ## Summary
 
 ### Definition
@@ -19,3 +23,19 @@ They're still [here](https://github.com/LaunchPadLab/process/tree/master/Profici
 
 ### How will we achieve this?
 Collectively, incrementally, and organically! The process is the goal so we can all pitch in starting with the lowest hanging fruit.
+
+## Projects
+
+Project | Language | Visibility | Description
+--- | --- | --- | ---
+[Fuel](https://github.com/LaunchPadLab/fuel) | Ruby/Rails | Open Source | Stop developing Rails blogs and start writing your actual blog posts with this dead simple blogging engine for Rails.
+[Decanter](https://github.com/LaunchPadLab/decanter) | Ruby/Rails | Open Source | Gem that makes it easy to transform incoming data before it hits the controller action or model.
+[Token Master](https://github.com/LaunchPadLab/token-master) | Ruby/Rails | Open Source | Easy management of token-based flows for Ruby apps.
+[LP Utils](https://github.com/LaunchPadLab/lp-utils) | JS/React/Redux | Internal | A set of utility functions and higher order components (HOC) for use in React and Redux apps.
+[LP Components](https://github.com/LaunchPadLab/lp-components) | JS/React/Redux | Internal | A set of reusable React components.
+[LP Redux Api](https://github.com/LaunchPadLab/lp-redux-api) | JS/React/Redux | Open Source | Lightweight API library and middleware for redux applications.
+[LP Token Auth](https://github.com/LaunchPadLab/lp_token_auth) | Ruby/Rails | Open Source | Simple token authentication logic with JWTs for Rails apps. No baked in routing, just the barebones logic you need to implement token authentication with JWTs.
+[Open Sesame](https://github.com/LaunchPadLab/opensesame) | Bash | Internal | Secure secret management
+
+## Presentations
+- Linting: [Presentation](https://gitpitch.com/LaunchPadLab/linting)	· [Repo](https://github.com/LaunchPadLab/linting)	· [Video]()
