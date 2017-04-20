@@ -36,6 +36,7 @@ Project | Language | Visibility | Description
 [LP Redux Api](https://github.com/LaunchPadLab/lp-redux-api) | JS/React/Redux | Open Source | Lightweight API library and middleware for redux applications.
 [LP Token Auth](https://github.com/LaunchPadLab/lp_token_auth) | Ruby/Rails | Open Source | Simple token authentication logic with JWTs for Rails apps. No baked in routing, just the barebones logic you need to implement token authentication with JWTs.
 [Open Sesame](https://github.com/LaunchPadLab/opensesame) | Bash | Internal | Secure secret management
+[Rails Util](https://github.com/LaunchPadLab/rails_util) | Ruby/Rails | Internal | Utility methods for Rails apps
 
 ## Presentations
 - Linting: [Presentation](https://gitpitch.com/LaunchPadLab/linting)	· [Repo](https://github.com/LaunchPadLab/linting)	· [Video](https://drive.google.com/open?id=0B4d5JSnfGUZ0UUtTTWY5d05MdDA)
