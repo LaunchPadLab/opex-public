@@ -8,7 +8,7 @@
 
 ## Projects
 
-Project | Language | Visibility | Description | Lend a hand
+Project | Language | Visibility | Description | Volunteer!
 --- | --- | --- | --- | ---
 [Fuel](https://github.com/LaunchPadLab/fuel) | Ruby/Rails | Open Source | Stop developing Rails blogs and start writing your actual blog posts with this dead simple blogging engine for Rails. | [![Issues for LaunchPadLab/fuel](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/fuel)](https://github.com/LaunchPadLab/fuel/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 [Decanter](https://github.com/LaunchPadLab/decanter) | Ruby/Rails | Open Source | Gem that makes it easy to transform incoming data before it hits the controller action or model. | [![Issues for LaunchPadLab/decanter](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/decanter)](https://github.com/LaunchPadLab/decanter/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
@@ -18,7 +18,7 @@ Project | Language | Visibility | Description | Lend a hand
 [LP Redux Api](https://github.com/LaunchPadLab/lp-redux-api) | JS/React/Redux | Open Source | Lightweight API library and middleware for redux applications. | [![Issues for LaunchPadLab/lp-redux-api](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/lp-redux-api)](https://github.com/LaunchPadLab/lp-redux-api/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 [LP Token Auth](https://github.com/LaunchPadLab/lp_token_auth) | Ruby/Rails | Open Source | Simple token authentication logic with JWTs for Rails apps. No baked in routing, just the barebones logic you need to implement token authentication with JWTs. | [![Issues for LaunchPadLab/lp_token_auth](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/lp_token_auth)](https://github.com/LaunchPadLab/lp_token_auth/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 [Open Sesame](https://github.com/LaunchPadLab/opensesame) | Bash | Internal | Secure secret management | [![Issues for LaunchPadLab/opensesame](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/opensesame)](https://github.com/LaunchPadLab/opensesame/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-[![Issues for LaunchPadLab/rails_util](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/rails_util)](https://github.com/LaunchPadLab/rails_util/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) | Ruby/Rails | Internal | Utility methods for Rails apps | [Rails Util](https://github.com/LaunchPadLab/rails_util)
+[Rails Util](https://github.com/LaunchPadLab/rails_util) | Ruby/Rails | Internal | Utility methods for Rails apps | [![Issues for LaunchPadLab/rails_util](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/rails_util)](https://github.com/LaunchPadLab/rails_util/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 
 ## Presentations
 - OpEx: [OG Slides](https://docs.google.com/a/launchpadlab.com/presentation/d/12Qu-NdpthWA4zc4CbzuXcvBkvtJEgLY8uD2fmah3gTc/edit?usp=sharing)
