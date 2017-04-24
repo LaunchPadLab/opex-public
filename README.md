@@ -3,10 +3,10 @@
 > Operational Excellence is an element of organizational leadership that focuses on meeting **customer expectation**, all while stressing the application of a variety of **principles, systems, and tools** toward the **sustainable improvement** of key performance **metrics**.  - [Wikipedia](https://en.wikipedia.org/wiki/Operational_excellence) (*emphasis added*)
 
 # Contents
-- [Get Involved](#getinvolved)
+- [Get Involved](#get-involved)
 - [Projects](#projects)
 - [Presentations](#presentations)
-- [Knowledge Base](#knowledgebase)
+- [Knowledge Base](#knowledge-base)
 - [Motivation](#motivation)
 
 ## Get Involved
