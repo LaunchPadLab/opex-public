@@ -15,6 +15,11 @@ For new features, contributors should submit an issue or PR with the label of `i
 Pull requests must be approved by someone on the team before merging into master. Before the PR is merged, the implementor should bump the version according to semantic versioning using either the [versionator](https://github.com/LaunchPadLab/versionator) or `yarn version`. 
 Once merged, the master branch should be auto-published to NPM via Codeship.
 
+## Releases
+Once a new version has been merged, a Github release will be automatically created for it. The contributor responsible for the new version should add some notes to the release indicating what changes were made.
+
+If the new release is not visible, you may need to push the tag created by `yarn version`, using `git push --tags`.
+
 ## Development
 
 To develop the package locally:
