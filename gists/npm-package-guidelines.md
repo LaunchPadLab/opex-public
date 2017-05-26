@@ -1,6 +1,6 @@
 # NPM Package guidelines
 
-Here are some guidelines for creating and contributing to NPM packages!
+Here are some guidelines for creating and contributing to NPM packages.
 
 *Note: This is a living document and subject to change as best practices evolve.*
 
