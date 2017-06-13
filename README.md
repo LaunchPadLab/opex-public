@@ -5,8 +5,7 @@
 # Contents
 - [Get Involved](#get-involved)
 - [Projects](#projects)
-- [Presentations](#presentations)
-- [Knowledge Base](#knowledge-base)
+- [Research](#research)
 - [Motivation](#motivation)
 
 ## Get Involved
@@ -33,12 +32,8 @@ Project | Language | Visibility | Description | Contribute!
 [Token Master](https://github.com/LaunchPadLab/token-master) | Ruby, Rails | Open Source | Easy management of token-based flows for Ruby apps. | [![Issues for LaunchPadLab/token-master](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/token-master)](https://github.com/LaunchPadLab/token-master/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 [Versionator](https://github.com/LaunchPadLab/versionator) | Node | Internal | Github status integration to help with library versioning | [![Issues for LaunchPadLab/versionator](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/versionator)](https://github.com/LaunchPadLab/versionator/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 
-## Presentations
-- OpEx: [OG Slides](https://docs.google.com/a/launchpadlab.com/presentation/d/12Qu-NdpthWA4zc4CbzuXcvBkvtJEgLY8uD2fmah3gTc/edit?usp=sharing)
-- Linting: [Presentation](https://gitpitch.com/LaunchPadLab/linting)	· [Repo](https://github.com/LaunchPadLab/linting)	· [Video](https://drive.google.com/open?id=0B4d5JSnfGUZ0UUtTTWY5d05MdDA)
-
-## Knowledge Base
-TBD
+## Research
+As part of Opex, we want to encourage the team to branch out and investigate new technologies. To that end, we've created a [running list of technologies](https://docs.google.com/a/launchpadlab.com/spreadsheets/d/1Zfk1tavCYlIW9SWC2UCwGd1g-HL3-aizDddhfWCc_y8/edit?usp=sharing) that we find particularly compelling. You can use this list as a resource when looking for potential demo day ideas. 
 
 ## Motivation
 
