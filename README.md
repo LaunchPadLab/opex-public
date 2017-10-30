@@ -26,7 +26,7 @@ Project | Language | Visibility | Description
 [LP Redux Utils](https://github.com/LaunchPadLab/lp-redux-utils) | JS, Redux | Open source | Utility functions for redux applications.
 [LP Requests](https://github.com/LaunchPadLab/lp-requests) | JS | Open source | Client-side request library.
 [LP Utils (deprecated)](https://github.com/LaunchPadLab/lp-utils) | JS, React, Redux | Open source | A set of utility functions and higher order components (HOC) for use in React and Redux apps.
-[LP Token Auth](https://github.com/LaunchPadLab/lp_token_auth) | Ruby, Rails | Open source | Simple token authentication logic with JWTs for Rails apps.(https://github.com/LaunchPadLab/lp_token_auth/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
+[LP Token Auth](https://github.com/LaunchPadLab/lp_token_auth) | Ruby, Rails | Open source | Simple token authentication logic with JWTs for Rails apps.
 [Open Sesame](https://github.com/LaunchPadLab/opensesame) | Bash | Internal | Secure secret management.
 [Rails Util](https://github.com/LaunchPadLab/rails_util) | Ruby, Rails | Internal | Utility methods for Rails apps.
 [Rails Template](https://github.com/LaunchPadLab/rails_template) | Ruby, Rails | Internal | Templates and starter files for Rails apps.
