@@ -9,28 +9,30 @@
 - [Motivation](#motivation)
 
 ## Get Involved
-To achieve maximal excellence, we need contributions from everyone!! The quickest way to get involved is to grab any of the 'Help Wanted' issues in this repo or any of the ones below in [Projects](#projects). Assign it to yourself, remove the 'Help Wanted' label, and go for it! Feel free to ask any questions on the issue itself and one of us will get back to you within a day or two.
+To achieve maximal excellence, we need contributions from everyone!! The quickest way to get involved is to grab any of the unassigned issues in this repo or any of the ones below in [Projects](#projects). Feel free to ask any questions on the issue itself and one of us will get back to you within a day or two.
 
-Have some general questions or new, excellent ideas? Create an issue in this repo with the appropriate label and lets talk it out!
+Have some general questions or new, excellent ideas? Create an issue in this repo with a label of "idea" and lets talk it out!
 
 ## Projects
 
-Project | Language | Visibility | Description | Contribute!
---- | --- | --- | --- | ---
-[Decanter](https://github.com/LaunchPadLab/decanter) | Ruby, Rails | Open Source | Gem that makes it easy to transform incoming data before it hits the controller action or model. | [![Issues for LaunchPadLab/decanter](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/decanter)](https://github.com/LaunchPadLab/decanter/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-[Fuel](https://github.com/LaunchPadLab/fuel) | Ruby, Rails | Open Source | Stop developing Rails blogs and start writing your actual blog posts with this dead simple blogging engine for Rails. | [![Issues for LaunchPadLab/fuel](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/fuel)](https://github.com/LaunchPadLab/fuel/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-[LP Badge](https://github.com/LaunchPadLab/lp-components) | Node | Internal | Github issue status badges. | [![Issues for LaunchPadLab/lp-badge](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/lp-badge)](https://github.com/LaunchPadLab/lp-badge/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-[LP Components](https://github.com/LaunchPadLab/lp-components) | JS, React, Redux | Internal | A set of reusable React components. | [![Issues for LaunchPadLab/lp-components](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/lp-components)](https://github.com/LaunchPadLab/lp-components/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-[LP Redux Api](https://github.com/LaunchPadLab/lp-redux-api) | JS, React, Redux | Open Source | Lightweight API library and middleware for redux applications. | [![Issues for LaunchPadLab/lp-redux-api](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/lp-redux-api)](https://github.com/LaunchPadLab/lp-redux-api/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-[LP Requests](https://github.com/LaunchPadLab/lp-requests) | JS | Internal | Client-side request helpers. | [![Issues for LaunchPadLab/lp-requests](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/lp-requests)](https://github.com/LaunchPadLab/lp-requests/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-[LP Utils](https://github.com/LaunchPadLab/lp-utils) | JS, React, Redux | Internal | A set of utility functions and higher order components (HOC) for use in React and Redux apps. | [![Issues for LaunchPadLab/lp-utils](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/lp-utils)](https://github.com/LaunchPadLab/lp-utils/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-[LP Token Auth](https://github.com/LaunchPadLab/lp_token_auth) | Ruby, Rails | Open Source | Simple token authentication logic with JWTs for Rails apps. No baked in routing, just the barebones logic you need to implement token authentication with JWTs. | [![Issues for LaunchPadLab/lp_token_auth](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/lp_token_auth)](https://github.com/LaunchPadLab/lp_token_auth/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-[Open Sesame](https://github.com/LaunchPadLab/opensesame) | Bash | Internal | Secure secret management | [![Issues for LaunchPadLab/opensesame](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/opensesame)](https://github.com/LaunchPadLab/opensesame/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-[Rails Util](https://github.com/LaunchPadLab/rails_util) | Ruby, Rails | Internal | Utility methods for Rails apps | [![Issues for LaunchPadLab/rails_util](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/rails_util)](https://github.com/LaunchPadLab/rails_util/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-[Rails Template](https://github.com/LaunchPadLab/rails_template) | Ruby, Rails | Internal | Templates and starter files for Rails apps | [![Issues for LaunchPadLab/rails_template](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/rails_template)](https://github.com/LaunchPadLab/rails_template/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-[Redux Flash](https://github.com/LaunchPadLab/redux-flash) | JS, Redux | Open Source | Redux action creators for displaying flash messages. | [![Issues for LaunchPadLab/redux-flash](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/redux-flash)](https://github.com/LaunchPadLab/redux-flash/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-[Token Master](https://github.com/LaunchPadLab/token-master) | Ruby, Rails | Open Source | Easy management of token-based flows for Ruby apps. | [![Issues for LaunchPadLab/token-master](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/token-master)](https://github.com/LaunchPadLab/token-master/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-[Versionator](https://github.com/LaunchPadLab/versionator) | Node | Internal | Github status integration to help with library versioning | [![Issues for LaunchPadLab/versionator](http://lp-badge.herokuapp.com/?repo=LaunchPadLab/versionator)](https://github.com/LaunchPadLab/versionator/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
+Project | Language | Visibility | Description
+--- | --- | --- | ---
+[Decanter](https://github.com/LaunchPadLab/decanter) | Ruby, Rails | Open source | Gem that makes it easy to transform incoming data before it hits the controller action or model.
+[Fuel](https://github.com/LaunchPadLab/fuel) | Ruby, Rails | Open source | Stop developing Rails blogs and start writing your actual blog posts with this dead simple blogging engine for Rails.
+[LP Components](https://github.com/LaunchPadLab/lp-components) | JS, React | Open source | A set of reusable React components.
+[LP Form](https://github.com/LaunchPadLab/lp-form) | JS, React, Redux | Open source | Extensions for the reduxForm HOC.
+[LP HOC](https://github.com/LaunchPadLab/lp-hoc) | JS, React | Open source | A set of higher order components (HOC) for use in React apps.
+[LP Redux Api](https://github.com/LaunchPadLab/lp-redux-api) | JS, Redux | Open source | Lightweight API library and middleware for redux applications.
+[LP Redux Utils](https://github.com/LaunchPadLab/lp-redux-utils) | JS, Redux | Open source | Utility functions for redux applications.
+[LP Requests](https://github.com/LaunchPadLab/lp-requests) | JS | Open source | Client-side request library.
+[LP Utils (deprecated)](https://github.com/LaunchPadLab/lp-utils) | JS, React, Redux | Open source | A set of utility functions and higher order components (HOC) for use in React and Redux apps.
+[LP Token Auth](https://github.com/LaunchPadLab/lp_token_auth) | Ruby, Rails | Open source | Simple token authentication logic with JWTs for Rails apps.(https://github.com/LaunchPadLab/lp_token_auth/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
+[Open Sesame](https://github.com/LaunchPadLab/opensesame) | Bash | Internal | Secure secret management.
+[Rails Util](https://github.com/LaunchPadLab/rails_util) | Ruby, Rails | Internal | Utility methods for Rails apps.
+[Rails Template](https://github.com/LaunchPadLab/rails_template) | Ruby, Rails | Internal | Templates and starter files for Rails apps.
+[Redux Flash](https://github.com/LaunchPadLab/redux-flash) | JS, Redux | Open source | Redux action creators for displaying flash messages.
+[Token Master](https://github.com/LaunchPadLab/token-master) | Ruby, Rails | Open source | Easy management of token-based flows for Ruby apps.
+[Versionator](https://github.com/LaunchPadLab/versionator) | Node | Internal | Github status integration to help with library versioning.
 
 ## Research
 As part of Opex, we want to encourage the team to branch out and investigate new technologies. To that end, we've created a [running list of technologies](https://docs.google.com/a/launchpadlab.com/spreadsheets/d/1Zfk1tavCYlIW9SWC2UCwGd1g-HL3-aizDddhfWCc_y8/edit?usp=sharing) that we find particularly compelling. You can use this list as a resource when looking for potential demo day ideas. 
