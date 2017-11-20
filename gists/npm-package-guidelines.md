@@ -40,4 +40,4 @@ Changes will be immediately compiled and available to the client application.
 Packages should use [Jest](https://facebook.github.io/jest/) for unit testing, run with `yarn run test`.
 
 ## Linting
-Package should use [ESLint](http://eslint.org/) for linting, run with `yarn run lint`. [Here's](.eslintrc) a sample lint config file with some useful plugins included.
+Package should use [ESLint](http://eslint.org/) for linting, run with `yarn run lint`.
