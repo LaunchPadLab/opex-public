@@ -5,9 +5,9 @@ Here are some text editor plugins that have been recommended by the LPL team.
 Jump to:
 - [Atom](#atom)
 - [SublimeText](#sublime-text)
-- [VS Code](#vs-code).
+- [VS Code](#vs-code)
 
-Feel free to edit this document and add your own favorites!
+Feel free to edit this document with your own favorites!
 
 ## Atom
 
