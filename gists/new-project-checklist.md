@@ -46,9 +46,6 @@
   - [ ] Select Pull request, reviews, issues, and comments on PR's or issues
   - [ ] Select Deploy Events
 
-### Snyk
-  - [ ] Add `lpluser` as Admin to repo
-
 ## Heroku
 
 ### Create New
