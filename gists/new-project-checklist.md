@@ -20,7 +20,7 @@
     - [ ] Require status checks to pass before merging
 
 #### Collaborators
-  - [ ] Create new team and add devs needed as Admins
+  - [ ] Add LPL team users
 
 ## Integrations
 
@@ -35,6 +35,10 @@
   - [ ] Select Basic project
   - [ ] Add test commands
   - [ ] Add environment variables
+
+### Travis
+  - [ ] Add repo
+  - [ ] Add .travis.yml
 
 ### Code Climate
   - [ ] Add repo
