@@ -26,22 +26,11 @@
 
 ### Sentry
   - [ ] Create project (add to LaunchPad Lab team)
-  - [ ] Add Sentry DSN to code
+  - [ ] Add Sentry DSN to `application.yml`
   - [ ] Add Sentry DSN to Heroku app
 
-### Codeship
-  - [ ] Create project
-  - [ ] Connect via Github
-  - [ ] Select Basic project
-  - [ ] Add test commands
-  - [ ] Add environment variables
-
 ### Travis
-  - [ ] Add repo
-  - [ ] Add .travis.yml
-
-### Code Climate
-  - [ ] Add repo
+  - [ ] Add repo to [Travis CI](https://travis-ci.org/)
 
 ### Slack
   - [ ] Create channel
@@ -59,8 +48,8 @@
   - [ ] Enable review apps in pipeline
 
 ### Resources
-  - [ ] New Relic
-  - [ ] Papertrail
+  - [ ] Add New Relic add-on
+  - [ ] Add Papertrail add-on
 
 ### Deploy
   - [ ] Deploy via GitHub
