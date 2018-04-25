@@ -38,11 +38,11 @@ This checklist assumes that a new repo is started from the rails or client templ
   - [ ] Add repo to [Travis CI](https://travis-ci.org/)
 
 ### Slack
-  - [ ] Create channel
+  - [ ] Create project channel if not yet created
   - [ ] Add [Github Legacy Notifications](https://launchpadlab.slack.com/apps/new/A0F7YS2SX-github-notifications-legacy) to channel
   - [ ] Deselect commit events
-  - [ ] Select Pull request, reviews, issues, and comments on PR's or issues
   - [ ] Select Deploy Events
+  - [ ] Notifications can be further refined in the repo under Settings/Webhooks (edit Slack webhook)
 
 ## Heroku
 
