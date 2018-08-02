@@ -4,6 +4,10 @@ Guidelines for creating and contributing to NPM packages.
 
 *Note: This is a living document and subject to change as best practices evolve.*
 
+## Licensing
+
+Publicly available packages should be licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
 ## Documentation
 Documentation and usage information should be contained in a `docs.md` file at the root level. If possible, docs should be auto-generated from inline [JSDoc-style](http://usejsdoc.org/) comments using [documentation.js](https://github.com/documentationjs/documentation).
 Any changes or additions to the library should be accompanied by corresponding changes to the docs. Docs can be automatically compiled with a precommit hook using [husky](https://github.com/typicode/husky).
