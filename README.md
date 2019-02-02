@@ -34,6 +34,8 @@ Project | Language | Visibility | Description
 [Token Master](https://github.com/LaunchPadLab/token-master) | Ruby, Rails | Open source | Easy management of token-based flows for Ruby apps.
 [Versionator](https://github.com/LaunchPadLab/versionator) | Node | Internal | Github status integration to help with library versioning.
 
+**Note**: Open source visibility is defined in two ways: *transparency* and *community owned*. We default to our libraries and code being open sourced for the sake of transparency but is maintained by our team and not the larger community. There are exceptions where a library seeks out community involvement and code updates (ex. [Decanter](https://github.com/LaunchPadLab/decanter)), but that is part of a conscious and intentional decision by the OpEx core team.
+
 ## Research
 As part of Opex, we want to encourage the team to branch out and investigate new technologies. To that end, we've created a [running list of technologies](https://docs.google.com/a/launchpadlab.com/spreadsheets/d/1Zfk1tavCYlIW9SWC2UCwGd1g-HL3-aizDddhfWCc_y8/edit?usp=sharing) that we find particularly compelling. You can use this list as a resource when looking for potential demo day ideas. 
 
