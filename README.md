@@ -4,7 +4,7 @@ Opex is an internal organization that focuses on improving the tri-fold objectiv
 
 This repository is Opex's home base! It contains the following resources:
 1. [A list of Opex-maintained "internal open source" projects](#projects).
-1. [A collection of ideas and planned enhancement to Opex projects](#issues).
+1. [A collection of Github issues containing ideas and planned enhancement to Opex projects](#issues).
 1. [A few gists that document our standard development practices](#gists).
 
 ## Projects
@@ -33,24 +33,15 @@ Project | Language | Visibility | Description
 
 **Note**: Open source visibility is defined in two ways: *transparency* and *community owned*. We default to our libraries and code being open sourced for the sake of transparency but is maintained by our team and not the larger community. There are exceptions where a library seeks out community involvement and code updates (ex. [Decanter](https://github.com/LaunchPadLab/decanter)), but that is part of a conscious and intentional decision by the Opex team.
 
-<!-- Have some general questions or new, excellent ideas? Create an issue in this repo with a label of "idea" and lets talk it out! -->
+## Issues
 
-<!-- ## Research
-As part of Opex, we want to encourage the team to branch out and investigate new technologies. To that end, we've created a [running list of technologies](https://docs.google.com/a/launchpadlab.com/spreadsheets/d/1Zfk1tavCYlIW9SWC2UCwGd1g-HL3-aizDddhfWCc_y8/edit?usp=sharing) that we find particularly compelling. You can use this list as a resource when looking for potential demo day ideas. 
+The [issues](https://github.com/LaunchPadLab/opex/issues) in this repository contain ideas and planned enhancements for Opex-maintained libraries. Feel free to contribute to the discussion on these issues, or if you have an idea that isn't represented yet, create your own! Creating an issue does not mean you'll need to implement anything yourself, it simply opens it up a topic for discussion.
 
-## Motivation
+Each month, a few of these issues are pulled into a **monthly Github milestone**, which flags them as a priority for Opex team. If you'd like to work on an issue in a milestone, please coordinate with the Opex team on how to tackle the issue together.
 
-### Principles
-Guidelines for designing systems and choosing tools that will maximize our ability to meet and exceed our internal and external expections. Whenever there is a choice to be made, we can fallback on our principles to help make the decision.
+## Gists
 
-### Systems
-Processes that ensure internal and external expectations are consistently met across projects, clients, space, and time. This includes standards, infrastructure, communication protocols and well-defined responsibilities.
+One function of Opex is to set standard processes by which we do our work. These processes are documented in the [gists](gists) folder of this repository. 
 
-### Tools
-Services and libraries used to implement our Systems. These will be in constant flux, but will always reflect the application of our Principles to the current state of our knowledge and situation.
+These documents are fairly limited in scope and there are few of them by design. This prevents information overload and encourages us to encapsulate as many of our best practices as possible in our app template repositories. Still, they may come in handy as a general reference / anti-bikeshedding tool.
 
-### What about our "Proficiencies"?
-They're still [here](https://github.com/LaunchPadLab/process/tree/master/Proficiencies) and we will continue to use them to flesh out the details.
-
-### How will we achieve this?
-Collectively, incrementally, and organically! The process is the goal so we can all pitch in starting with the lowest hanging fruit. -->
