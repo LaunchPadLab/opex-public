@@ -1,4 +1,4 @@
-# New Repo Checklist
+# New Project Checklist
 
 Checklist for setting up the repository, Heroku, and other integrations when starting a new project.
 
