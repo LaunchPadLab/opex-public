@@ -29,7 +29,7 @@ Project | Language | Visibility | Description
 [Rails Template](https://github.com/LaunchPadLab/rails_template) | Ruby, Rails | Private | Templates and starter files for Rails apps.
 [Redux Flash](https://github.com/LaunchPadLab/redux-flash) | JS, Redux | Public | Redux action creators for displaying flash messages.
 [Token Master](https://github.com/LaunchPadLab/token-master) | Ruby, Rails | Public | Easy management of token-based flows for Ruby apps.
-[Versionator](https://github.com/LaunchPadLab/versionator) | Node | Private | Github status integration to help with library versioning.
+[Versionator](https://github.com/LaunchPadLab/versionator) | JS | Private | Github status integration to help with library versioning.
 
 **Note**: Open source visibility is defined in two ways: *transparency* and *community owned*. We default to our libraries and code being open source for the sake of transparency but is maintained by our team and not the larger community. There are exceptions where a library seeks out community involvement and code updates (ex. [Decanter](https://github.com/LaunchPadLab/decanter)), but that is part of a conscious and intentional decision by the Opex team.
 
