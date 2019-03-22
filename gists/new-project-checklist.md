@@ -6,6 +6,8 @@ The below items capture the steps that should be completed for both client-side 
 This checklist assumes that a new repo is started from the rails or client templates, which include the configuration files needed for the integrations.
 
 ## GitHub
+- [ ] Create a new repo in GitHub (do not initialize with a README)
+- [ ] Add the repo as origin (following GitHub's instructions) and push initial commit from the template
 
 ### Insights
 
@@ -31,18 +33,12 @@ This checklist assumes that a new repo is started from the rails or client templ
 
 ### Sentry
   - [ ] Create project (add to LaunchPad Lab team)
-  - [ ] Add Sentry DSN to `application.yml`
-  - [ ] Add Sentry DSN to Heroku app
+  - [ ] Add Sentry DSN to `application.yml` as `SENTRY_URL`
+    - [ ] If this file doesn't exist, follow [these instructions](https://github.com/LaunchPadLab/opensesame#opensesame)
+    - [ ] (Optional - Client): Add `SENTRY_ENV` to differentiate between apps (e.g., production or staging)
 
 ### Travis
-  - [ ] Add repo to [Travis CI](https://travis-ci.org/)
-
-### Slack
-  - [ ] Create project channel if not yet created
-  - [ ] Add [Github Legacy Notifications](https://launchpadlab.slack.com/apps/new/A0F7YS2SX-github-notifications-legacy) to channel
-  - [ ] Deselect commit events
-  - [ ] Select Deploy Events
-  - [ ] Notifications can be further refined in the repo under Settings/Webhooks (edit Slack webhook)
+  - [ ] Confirm that repo has been added to [Travis CI](https://travis-ci.com/)
 
 ## Heroku
 
@@ -68,4 +64,4 @@ This checklist assumes that a new repo is started from the rails or client templ
   - [ ] Add admins and collaborators as needed
 
 ### Settings
-  - [ ] Add config vars from `application.yml`
+  - [ ] Add config vars from `application.yml` to the respective environment app
