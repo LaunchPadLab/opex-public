@@ -84,7 +84,7 @@ Copy the following into your `javascript.json` snippet file:
 			"import PropTypes from 'prop-types'",
 			"import { compose } from 'recompose'",
 			"import { lpForm } from 'lp-form'",
-			"import { SubmitButton} from 'lp-components'",
+			"import { SubmitButton } from 'lp-components'",
 			"// import { Field } from 'redux-form'",
 			"",
 			"const propTypes = {",
