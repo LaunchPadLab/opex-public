@@ -109,7 +109,10 @@ Copy the following into your `javascript.json` snippet file:
 			"${1:MyFormComponent}.defaultProps = defaultProps",
 			"",
 			"export default compose(",
-			"\tlpForm({ name: '${1:MyFormComponent}' }),",
+			"\tlpForm({",
+			"\t\tname: '${1:MyFormComponent}',",
+			"\t\tconstraints: {},",
+			"}),",
 			")(${1:MyFormComponent})"
 		],
 		"description": "LP-Form enhanced Redux-Form form component"
