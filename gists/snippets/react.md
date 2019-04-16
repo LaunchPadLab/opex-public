@@ -75,7 +75,48 @@ Copy the following into your `javascript.json` snippet file:
 			")(${1:MyComponent})"
 		],
 		"description": "Redux connected React component"
-	}
+	},
+	
+	"React LP Form Component": {
+		"prefix": "reactLpFormComponent",
+		"body": [
+			"import React from 'react'",
+			"import PropTypes from 'prop-types'",
+			"import { compose } from 'recompose'",
+			"import { lpForm } from 'lp-form'",
+			"import { SubmitButton } from 'lp-components'",
+			"// import { Field } from 'redux-form'",
+			"",
+			"const propTypes = {",
+			"\thandleSubmit: PropTypes.func.isRequired,",
+			"\tsubmitting: PropTypes.bool.isRequired,",
+			"}",
+			"",
+			"const defaultProps = {}",
+			"",
+			"function ${1:MyFormComponent} ({ handleSubmit, submitting }) {",
+			"\treturn (",
+			"\t\t<form onSubmit={ handleSubmit } noValidate>",
+			"\t\t\t$0",
+			"\t\t\t<SubmitButton {...submitting}>",
+			"\t\t\t\tSubmit",
+			"\t\t\t</SubmitButton>",
+			"\t\t</form>",
+			"\t)",
+			"}",
+			"",
+			"${1:MyFormComponent}.propTypes = propTypes",
+			"${1:MyFormComponent}.defaultProps = defaultProps",
+			"",
+			"export default compose(",
+			"\tlpForm({",
+			"\t\tname: '${1:MyFormComponent}',",
+			"\t\tconstraints: {},",
+			"}),",
+			")(${1:MyFormComponent})"
+		],
+		"description": "LP-Form enhanced Redux-Form form component"
+	},
 }
 
 ```
