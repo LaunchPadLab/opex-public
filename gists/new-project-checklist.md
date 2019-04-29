@@ -7,7 +7,7 @@ This checklist assumes that a new repo is started from the rails or client templ
 
 ## GitHub
 - [ ] Create a new repo in GitHub (do not initialize with a README)
-- [ ] Add the repo as origin (following GitHub's instructions) and push initial commit from the template
+- [ ] Add the repo as origin (following [GitHub's instructions](https://help.github.com/en/articles/adding-a-remote)) and push initial commit from the template
 
 ### Insights
 
