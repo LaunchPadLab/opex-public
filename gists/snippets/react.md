@@ -18,6 +18,7 @@ Copy the following into your `javascript.json` snippet file:
 		"body": [
 			"import React from 'react'",
 			"// import PropTypes from 'prop-types'",
+			"// import * as Types from 'types'",
 			"import exact from 'prop-types-exact'",
 			"import { pure } from 'recompose'",
 			"",
@@ -46,6 +47,7 @@ Copy the following into your `javascript.json` snippet file:
 		"body": [
 			"import React from 'react'",
 			"// import PropTypes from 'prop-types'",
+			"// import * as Types from 'types'",
 			"import { compose } from 'recompose'",
 			"import { connect } from 'react-redux'",
 			"",
@@ -82,6 +84,7 @@ Copy the following into your `javascript.json` snippet file:
 		"body": [
 			"import React from 'react'",
 			"import PropTypes from 'prop-types'",
+			"// import * as Types from 'types",
 			"import { compose } from 'recompose'",
 			"import { lpForm } from 'lp-form'",
 			"import { SubmitButton } from 'lp-components'",
