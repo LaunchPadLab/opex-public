@@ -122,6 +122,38 @@ Copy the following into your `javascript.json` snippet file:
 		],
 		"description": "LP-Form enhanced Redux-Form form component"
 	},
-}
 
+	"React Redux Modal Component": {
+		"prefix": "reactReduxModalComponent",
+		"body": [
+			"import React from 'react'",
+			"import PropTypes from 'prop-types'",
+			"import { compose } from 'recompose'",
+			"import { modal } from 'lp-hoc'",
+			"",
+			"const propTypes = {",
+			"\thandleHide: PropTypes.func.isRequired,",
+			"}",
+			"",
+			"const defaultProps = {}",
+			"",
+			"function ${1:MyModalComponent}({ handleHide }) {",
+			"\treturn (",
+			"\t\t<div>",
+			"\t\t\t<button onClick={ handleHide } className=\"modal-close\">×</button>",
+			"\t\t\t$0",
+			"\t\t</div>",
+			"\t)",
+			"}",
+			"",
+			"${1:MyModalComponent}.propTypes = propTypes",
+			"${1:MyModalComponent}.defaultProps = defaultProps",
+			"",
+			"export default compose(",
+			"\tmodal({ name: '${1:MyModalComponent}' })",
+			")(${1:MyModalComponent})"
+		],
+		"description": "Redux modal component"
+	}	
+}
 ```
