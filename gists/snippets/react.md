@@ -103,7 +103,7 @@ Copy the following into your `javascript.json` snippet file:
 			"\treturn (",
 			"\t\t<form onSubmit={ handleSubmit } noValidate>",
 			"\t\t\t$0",
-			"\t\t\t<SubmitButton {...submitting}>",
+			"\t\t\t<SubmitButton submitting={submitting}>",
 			"\t\t\t\tSubmit",
 			"\t\t\t</SubmitButton>",
 			"\t\t</form>",
