@@ -1,6 +1,10 @@
 # React snippets
 
-Defines `reactFunctionalComponent` and `reactReduxComponent` snippets.
+Defines snippets for common `React` components:
+* React-redux components (views)
+* Function UI components
+* Form components
+* Modal components
 
 ## VS Code 
 Copy the following into your `javascript.json` snippet file:
