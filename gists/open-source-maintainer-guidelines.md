@@ -16,6 +16,8 @@ _Note: Work prompted by a particular client project should be billed to that cli
 
 [This article](https://lord.io/blog/2014/oss-tips/) does a great job of explaining why this is important. “Addressing” an issue can be as simple as saying the issue is out of scope and suggesting a workaround or alternate strategy. As long as the person opening the issue has been unblocked on how to move forward, you can consider it addressed.
 
+In the context of day-to-day work, you should aim to respond to all incoming issues on the repo within 48 hours. This response can be as simple as _"I don't have time to respond to this right now but I can address it at {x time}."_
+
 ### 3. You are the expert on the library, but do not need to write all the code.
 
 Your responsibility is primarily as reviewer rather than coder. Don’t be afraid to prompt issue creators to open a PR for themselves, especially if there are urgent client needs. Also, know how to set developers up with a local version of the library to unblock them in the short term.
@@ -26,7 +28,11 @@ At the end of the day, the developer(s) assigned to a client project are ultimat
 
 This guideline follows from the previous one. If contribution is straightforward and low-risk, it allows developers to work uninterrupted and alleviates your workload as a maintainer. This is ultimately subjective, but some practices that can help lower the bar to contribution are:
 
-1. Adding a template for incoming PRs.
-2. Preemptively commenting any unintuitive code in the library.
-3. Adhering to semantic versioning on releases.
-4. Requiring tests and documentation for all new features and bug fixes.
+1. Adding a [template](https://help.github.com/en/github/building-a-strong-community/about-issue-and-pull-request-templates#pull-request-templates) for incoming PRs ([issue templates](https://help.github.com/en/github/building-a-strong-community/about-issue-and-pull-request-templates#issue-templates) exist as well).
+1. Preemptively commenting any unintuitive code in the library.
+1. Adhering to semantic versioning on releases.
+1. Requiring tests and documentation for all new features and bug fixes.
+
+---
+
+_Thanks for reading, and happy maintaining!_
