@@ -22,7 +22,7 @@ In the context of day-to-day work, you should aim to respond to all incoming iss
 
 Your responsibility is primarily as reviewer rather than coder. Don’t be afraid to prompt issue creators to open a PR for themselves, especially if there are urgent client needs. Also, know how to set developers up with a local version of the library to unblock them in the short term.
 
-At the end of the day, the developer(s) assigned to a client project are ultimately responsible for that project’s completion, whether or not it uses the library.
+Ultimately, the developer(s) assigned to a client project are responsible for that project’s completion, whether or not it uses the library.
 
 ### 4. The library should exist in a state where contribution is easy.
 
@@ -32,6 +32,8 @@ This guideline follows from the previous one. If contribution is straightforward
 1. Preemptively commenting any unintuitive code in the library.
 1. Adhering to semantic versioning on releases.
 1. Requiring tests and documentation for all new features and bug fixes.
+
+In addition to these suggestions, you can find more specific guidelines for [gems](./gem-guidelines.md) and [NPM packages](./npm-package-guidelines.md) in this repo.
 
 ---
 
