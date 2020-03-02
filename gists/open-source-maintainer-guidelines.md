@@ -28,7 +28,7 @@ Ultimately, the developer(s) assigned to a client project are responsible for th
 
 This guideline follows from the previous one. If contribution is straightforward and low-risk, it allows developers to work uninterrupted and alleviates your workload as a maintainer. This is ultimately subjective, but some practices that can help lower the bar to contribution are:
 
-1. Adding a [template](https://help.github.com/en/github/building-a-strong-community/about-issue-and-pull-request-templates#pull-request-templates) for incoming PRs ([issue templates](https://help.github.com/en/github/building-a-strong-community/about-issue-and-pull-request-templates#issue-templates) exist as well).
+1. Adding a [template](https://help.github.com/en/github/building-a-strong-community/about-issue-and-pull-request-templates#pull-request-templates) for incoming PRs ([issue templates](https://help.github.com/en/github/building-a-strong-community/about-issue-and-pull-request-templates#issue-templates) exist as well). Here's a simple example from [lp-components](https://github.com/LaunchPadLab/lp-components/blob/master/.github/PULL_REQUEST_TEMPLATE.md).
 1. Preemptively commenting any unintuitive code in the library.
 1. Adhering to semantic versioning on releases.
 1. Requiring tests and documentation for all new features and bug fixes.
