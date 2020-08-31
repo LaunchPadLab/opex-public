@@ -6,6 +6,10 @@ Defines snippets for common `React` components:
 * Form components
 * Modal components
 
+### Requirements:
+
+* The functional component snippet uses `React.memo`, which was added in React v16.6.0. If you're using an earlier version of React, this optimization can be safely removed.
+
 ## VS Code 
 Copy the following into your `javascript.json` snippet file:
 ```
@@ -23,7 +27,6 @@ Copy the following into your `javascript.json` snippet file:
 			"import React from 'react'",
 			"// import PropTypes from 'prop-types'",
 			"import exact from 'prop-types-exact'",
-			"import { pure } from 'recompose'",
 			"",
 			"const propTypes = {}",
 			"",
@@ -40,7 +43,7 @@ Copy the following into your `javascript.json` snippet file:
 			"${1:MyComponent}.propTypes = exact(propTypes)",
 			"${1:MyComponent}.defaultProps = defaultProps",
 			"",
-			"export default pure(${1:MyComponent})"
+			"export default React.memo(${1:MyComponent})"
 		],
 		"description": "Stateless React component"
 	},
