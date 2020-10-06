@@ -1,0 +1,64 @@
+# Pull Request (PR) Guidelines
+
+Guidelines for creating pull requests at LaunchPad Lab.
+
+## Authors
+- Use a [pull request template](https://docs.github.com/en/free-pro-team@latest/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository)
+  - These should come OOTB when starting a new project using the `client-template` or `rails-template`
+- Convert a PR to a [draft pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests#draft-pull-requests) if it is not ready for review yet (useful for [long-running](#long-running) prs)
+- Link to the appropriate task(s) that the PR addresses
+- Specifically call out items / features that are out of scope
+- Provide screenshots and instructions to reproduce / find style issues if there are outstanding items that require design assistance
+- Add guidance about what the reviewer(s) should focus on
+- Document what the QA tester should be testing
+- Open the review app to make sure that there are no critical errors **before** assigning for review
+- Merge the PR after approval is received from all assigned reviewers
+  - This is **your** responsibility, not the reviewer's
+
+### Types of PRs
+In general, there are two types of PRs: Long-Running and Granular. The two should be treated differently to make it easier for your teammates.
+
+#### Long-Running
+A long-running PR may contain multiple features or an epic. Some best practices include:
+- Mark the PR as draft and do not flip it to ready for review until you're ready
+- Flag other developers for help if you're stuck on a feature
+- Push up when context switching or done for the day
+- Keep the description, QA items, and other sections in the PR up-to-date
+
+#### Granular
+A granular PR may contain a single feature or even a _slice_ of a single feature. Some best practices include:
+- Make sure you are very explicitly about what is out of scope
+- Avoid this approach on quick projects since a reviewer's feedback could be blocking
+
+## Reviewers
+There are some guiding principles that _all_ reviewers should abide by:
+- Respond within 24 hours
+  - This does not necessarily mean that you have to _review_ the PR in 24 hours, but you must communicate with the author to align on timelines
+    - If you cannot review the PR in a sufficient timeline, inform the author and potentially reassign
+- Be explicit about what changes / comments are blocking versus non-blocking
+- Approval means that the author can merge immediately
+  - You are **not** responsible for merging the PR
+- Don't feel like you _have_ to leave a comment
+- Don't be rude
+
+### Code Reviewer
+Things to look for:
+- Variable naming
+- Flagging code that could benefit from additional comments
+- Library suggestions / updates
+- Refactor opportunities
+- Performance concerns
+
+Things to ignore:
+- Formatting (spacing, indentation, quoting)
+
+### QA Reviewer
+Things to look for:
+- Functionality addresses the requirements in the linked task(s)
+- Data validations
+- UX edge cases
+- UX consistency
+- Style issues
+
+Things to ignore:
+- Anything marked as "out of scope" by the author
