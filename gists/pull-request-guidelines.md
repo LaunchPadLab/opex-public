@@ -27,7 +27,7 @@ There are some guiding principles that _all_ reviewers should abide by:
 - Be explicit about what changes / comments are blocking versus non-blocking
 - Approval means that the author can merge immediately
   - You are **not** responsible for merging the PR
-- Use inclusive language and treat your colleagues with respect
+- Use inclusive language and treat your teammates with respect
 - Don't feel like you _have_ to leave a comment
 
 ### Code Reviewer
