@@ -4,7 +4,7 @@ Guidelines for creating pull requests at LaunchPad Lab for three types of users:
 
 - **Author**: The creator of the pull request.
 - **Code Reviewer**: A developer assigned to the pull request to review the new and/or modified code, not the application's functionality.
-- **QA Reviewer**: An individual assigned to the pull request to not only test the new and/or updated functionality introduced by the pull request, but also to raise any issues found related to existing functionality.
+- **QA Reviewer**: An individual assigned to the pull request to not only test the new and/or updated functionality introduced by the pull request, but also to raise any issues found related to existing functionality while performing the aforementioned test. A full regression test is not expected for each pull request.
 
 ## Authors
 - If there is an existing [pull request template](https://docs.github.com/en/free-pro-team@latest/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository), follow the steps and comments included
