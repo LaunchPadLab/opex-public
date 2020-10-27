@@ -10,6 +10,7 @@ Guidelines for creating pull requests at LaunchPad Lab for three types of users:
 - If there is an existing [pull request template](https://docs.github.com/en/free-pro-team@latest/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository), follow the steps and comments included
   - These templates will come out-of-the-box when starting a new project using LPL's internal starting applications
 - Convert a PR to a [draft pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests#draft-pull-requests) if it is not ready for review yet (useful for [long-running](#long-running) prs)
+  - Note: if using a different tool that does not support marking a pull request as a draft, then prepend `[DRAFT]` to the title of the pull request
 - Link to the appropriate Asana task(s) that the PR addresses
 - Specifically call out items / features that are out of scope
 - Provide screenshots and instructions to reproduce / find style issues if there are outstanding items that require design assistance
