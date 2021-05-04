@@ -6,6 +6,8 @@
 
 - It's recommended by the Rails team to update one minor version at a time to make good use of the deprecation warnings. Rails version numbers are in the form `Major.Minor.Patch`. Major and Minor versions are allowed to make changes to the public API, so this may cause errors in your application. Patch versions only include bug fixes, and don't change any public API.
 
+- Rails provides the `rails app:update` command to help you through the upgrading process. The command is included in the process detailed below and the [Rails Guides]([https://guides.rubyonrails.org/upgrading_ruby_on_rails.html#the-update-task]) provide additional context.
+
 ## Process
 
 1. Identify the next minor version of Rails that's above the current version.
