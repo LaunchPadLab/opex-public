@@ -34,14 +34,16 @@ bar({ k: 42 }) # => {:k=>42}
 
 4. Inside the Rails project, update the Ruby version in `.ruby-version`
 
-5. Also update the Ruby version in `Gemfile`
+5. Also update the Ruby version in `Gemfile`, and if the project uses Rubocop and Travis, update the Ruby in `rubocop.yml` and `travis.yml`, respectively.
 
-6. `bundle install` At this point, there will probably be errors due to some gems that don't support the new Ruby.
+6. You'll probably need to install bundler for the new Ruby, so check if it's installed with `bundler -v`. If you need it, run `gem install bundler:{version_number}`.
 
-7. If there are failures, look at the error message to determine which gem Bundler failed on. It's possible that a dependency of that gem is incompatible with the new Ruby and it needs to be updated. You can update a specific gem with `bundle update {gem-name}`. If this resolves your issue, run `bundle install` again. You may have to repeat this process a few times.
+7. Run `bundle install`. At this point, there will probably be errors due to some gems that don't support the new Ruby.
 
-8. Another option is to run `bundle update --conservative`, which updates the gems in your gemfile but prevents Bundler from updating the versions of any of the gems they depend on.
+8. If there are failures, look at the error message to determine which gem Bundler failed on. It's possible that a dependency of that gem is incompatible with the new Ruby and it needs to be updated. You can update a specific gem with `bundle update {gem-name}`. If this resolves your issue, run `bundle install` again. You may have to repeat this process a few times.
 
-9. When Bundler is finished, boot up your app and look for deprecation warnings. These warnings will identify potential failures that may occur the next time you upgrade Ruby. Now, run your test suite to make sure all the tests pass.
+9. Another option is to run `bundle update --conservative`, which updates the gems in your gemfile but prevents Bundler from updating the versions of any of the gems they depend on.
 
-10. If all is good, deploy the new Ruby to your testing environment and then to production.
+10. When Bundler is finished, boot up your app and look for deprecation warnings. These warnings will identify potential failures that may occur the next time you upgrade Ruby. Now, run your test suite to make sure all the tests pass.
+
+11. If all is good, deploy the new Ruby to your testing environment and then to production.
