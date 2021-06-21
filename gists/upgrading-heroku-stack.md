@@ -3,12 +3,12 @@
 ## Before You Start
 
 - Determine which version of Ruby the project is using and if it is compatible with the Heroku stack you are targeting. See
-  [Heroku Ruby Versions]([https://devcenter.heroku.com/articles/ruby-support#ruby-versions]) for more information.
-- If you need to upgrade Ruby, consider the end-of-life date for the Rubies that are compatible with the Heroku stack you are targeting. Don't choose a Ruby that has reached EOL or one that's close because EOL Rubies do not receive security updates. [Ruby Maintenance Branches]([https://www.ruby-lang.org/en/downloads/branches/]).
+  [Heroku Ruby Versions](https://devcenter.heroku.com/articles/ruby-support#ruby-versions) for more information.
+- If you need to upgrade Ruby, consider the end-of-life date for the Rubies that are compatible with the Heroku stack you are targeting. Don't choose a Ruby that has reached EOL or one that's close because EOL Rubies do not receive security updates. [Ruby Maintenance Branches](https://www.ruby-lang.org/en/downloads/branches/).
 
 ## Process
 
-1. If you need to upgrade Ruby, cut a feature branch from dev and follow the instructions in the [Upgrading Ruby]([https://github.com/LaunchPadLab/opex-public/blob/master/gists/upgrading-ruby.md]) gist.
+1. If you need to upgrade Ruby, cut a feature branch from dev and follow the instructions in the [Upgrading Ruby](https://github.com/LaunchPadLab/opex-public/blob/master/gists/upgrading-ruby.md) gist.
 2. Once Ruby is upgraded to the targeted version, Heroku recommends testing the new stack in a Review App. Inside `app.json` add a reference to the new Heroku stack.
 
 ```ruby
