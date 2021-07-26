@@ -16,4 +16,5 @@
 4. Run `bundle update`. This will update all of the gems in Gemfile to their latest versions unless the version is pinned.
 5. Run `rails app:update`. This will generate new files and change some existing configuration files.
 6. In the following interactive session, you will be asked to accept or decline these changes. Examine the diffs for each file and determine if you want to accept them. Chances are that you will want to accept these changes. In some config files, you may want to add your existing configurations to the new/updated file created by Rails.
-7. Run tests. If all is good, repeat this process with the following minor versions until you reach the desired version of Rails.
+7. In Rails >= 5.0, the `rails app:update` command generates an initializer that has new configuration defaults. The file is versioned (`new_framework_defaults_5_x.rb`) and it allows you to test new configuration defaults in the version you are upgrading to. Uncomment the new settings and test your application. If your application runs correctly on the new defaults, you can discard the `new_framework_defaults_5_x.rb` file and update `config.load_defaults` inside `config/application.rb` to the new Rails version.
+8. Run tests. If all is good, repeat this process with the following minor versions until you reach the desired version of Rails.
