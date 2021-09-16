@@ -17,7 +17,7 @@ Project | Language | Visibility | Description
 [Fuel](https://github.com/LaunchPadLab/fuel) (no longer maintained) | Ruby, Rails | Public | Stop developing Rails blogs and start writing your actual blog posts with this dead simple blogging engine for Rails.
 [LP Components](https://github.com/LaunchPadLab/lp-components) | JS, React | Public | A set of reusable React components.
 [LP Form](https://github.com/LaunchPadLab/lp-form) | JS, Redux | Public | Extensions for the reduxForm HOC.
-[LP HOC](https://github.com/LaunchPadLab/lp-hoc) | JS, React | Public | A set of higher order components (HOC) for use in React apps.
+[LP HOC](https://github.com/LaunchPadLab/lp-hoc) (deprecated) | JS, React | Public | A set of higher order components (HOC) for use in React apps.
 [LP Redux Api](https://github.com/LaunchPadLab/lp-redux-api) | JS, Redux | Public | Lightweight API library and middleware for redux applications.
 [LP Redux Utils](https://github.com/LaunchPadLab/lp-redux-utils) | JS, Redux | Public | Utility functions for redux applications.
 [LP Requests](https://github.com/LaunchPadLab/lp-requests) | JS | Public | Client-side request library.
