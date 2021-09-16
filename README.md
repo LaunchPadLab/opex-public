@@ -23,6 +23,7 @@ Project | Language | Visibility | Description
 [LP Requests](https://github.com/LaunchPadLab/lp-requests) | JS | Public | Client-side request library.
 [LP Utils](https://github.com/LaunchPadLab/lp-utils) (deprecated) | JS, React, Redux | Public | A set of utility functions and higher order components (HOC) for use in React and Redux apps.
 [LP Token Auth](https://github.com/LaunchPadLab/lp_token_auth) | Ruby, Rails | Public | Simple token authentication logic with JWTs for Rails apps.
+[LP Subsection Generator](https://github.com/LaunchPadLab/lp-subsection-generator) | JS, React, Redux | Public | Generates subsections for react-redux apps.
 [Open Sesame](https://github.com/LaunchPadLab/opensesame) | Bash | Private | Secure secret management.
 [Rails Template](https://github.com/LaunchPadLab/rails_template) | Ruby, Rails | Private | Templates and starter files for Rails apps.
 [Rails Util](https://github.com/LaunchPadLab/rails_util) | Ruby, Rails | Private | Utility methods for Rails apps.
