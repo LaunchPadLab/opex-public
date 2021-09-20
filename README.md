@@ -14,6 +14,7 @@ Project | Language | Visibility | Description
 --- | --- | --- | ---
 [Client Template](https://github.com/LaunchPadLab/client-template) | JS, React, Redux | Private | Template app for React/Redux SPAs.
 [Decanter](https://github.com/LaunchPadLab/decanter) | Ruby, Rails | Public | Gem that makes it easy to transform incoming data before it hits the controller action or model.
+[Flight Readiness Review](https://github.com/LaunchPadLab/flight_readiness_review) | Bash | Private | Utility to set up a macOS laptop for design and development at LaunchPad Lab.
 [Fuel](https://github.com/LaunchPadLab/fuel) (no longer maintained) | Ruby, Rails | Public | Stop developing Rails blogs and start writing your actual blog posts with this dead simple blogging engine for Rails.
 [LP Components](https://github.com/LaunchPadLab/lp-components) | JS, React | Public | A set of reusable React components.
 [LP Form](https://github.com/LaunchPadLab/lp-form) | JS, Redux | Public | Extensions for the reduxForm HOC.
