@@ -5,7 +5,6 @@ Defines snippets for common `React` components:
 - React-redux components (views)
 - Function UI components
 - Form components
-- Modal components
 
 ### Requirements:
 
