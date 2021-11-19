@@ -14,21 +14,23 @@ Project | Language | Visibility | Description
 --- | --- | --- | ---
 [Client Template](https://github.com/LaunchPadLab/client-template) | JS, React, Redux | Private | Template app for React/Redux SPAs.
 [Decanter](https://github.com/LaunchPadLab/decanter) | Ruby, Rails | Public | Gem that makes it easy to transform incoming data before it hits the controller action or model.
-[Fuel](https://github.com/LaunchPadLab/fuel) | Ruby, Rails | Public | Stop developing Rails blogs and start writing your actual blog posts with this dead simple blogging engine for Rails.
+[Flight Readiness Review](https://github.com/LaunchPadLab/flight_readiness_review) | Bash | Private | Utility to set up a macOS laptop for design and development at LaunchPad Lab.
+[Fuel](https://github.com/LaunchPadLab/fuel) (no longer maintained) | Ruby, Rails | Public | Stop developing Rails blogs and start writing your actual blog posts with this dead simple blogging engine for Rails.
 [LP Components](https://github.com/LaunchPadLab/lp-components) | JS, React | Public | A set of reusable React components.
 [LP Form](https://github.com/LaunchPadLab/lp-form) | JS, Redux | Public | Extensions for the reduxForm HOC.
-[LP HOC](https://github.com/LaunchPadLab/lp-hoc) | JS, React | Public | A set of higher order components (HOC) for use in React apps.
+[LP HOC](https://github.com/LaunchPadLab/lp-hoc) (deprecated) | JS, React | Public | A set of higher order components (HOC) for use in React apps.
 [LP Redux Api](https://github.com/LaunchPadLab/lp-redux-api) | JS, Redux | Public | Lightweight API library and middleware for redux applications.
 [LP Redux Utils](https://github.com/LaunchPadLab/lp-redux-utils) | JS, Redux | Public | Utility functions for redux applications.
 [LP Requests](https://github.com/LaunchPadLab/lp-requests) | JS | Public | Client-side request library.
-[LP Utils (deprecated)](https://github.com/LaunchPadLab/lp-utils) | JS, React, Redux | Public | A set of utility functions and higher order components (HOC) for use in React and Redux apps.
+[LP Utils](https://github.com/LaunchPadLab/lp-utils) (deprecated) | JS, React, Redux | Public | A set of utility functions and higher order components (HOC) for use in React and Redux apps.
 [LP Token Auth](https://github.com/LaunchPadLab/lp_token_auth) | Ruby, Rails | Public | Simple token authentication logic with JWTs for Rails apps.
+[LP Subsection Generator](https://github.com/LaunchPadLab/lp-subsection-generator) | JS, React, Redux | Public | Generates subsections for react-redux apps.
 [Open Sesame](https://github.com/LaunchPadLab/opensesame) | Bash | Private | Secure secret management.
-[Rails Util](https://github.com/LaunchPadLab/rails_util) | Ruby, Rails | Private | Utility methods for Rails apps.
 [Rails Template](https://github.com/LaunchPadLab/rails_template) | Ruby, Rails | Private | Templates and starter files for Rails apps.
+[Rails Util](https://github.com/LaunchPadLab/rails_util) | Ruby, Rails | Private | Utility methods for Rails apps.
 [Redux Flash](https://github.com/LaunchPadLab/redux-flash) | JS, Redux | Public | Redux action creators for displaying flash messages.
 [Token Master](https://github.com/LaunchPadLab/token-master) | Ruby, Rails | Public | Easy management of token-based flows for Ruby apps.
-[Versionator](https://github.com/LaunchPadLab/versionator) | JS | Private | Github status integration to help with library versioning.
+[Versionator](https://github.com/LaunchPadLab/versionator) | JS | Private | GitHub status integration to help with library versioning.
 
 **Note**: Open source visibility is defined in two ways: *transparency* and *community owned*. We default to our libraries and code being open source for the sake of transparency but is maintained by our team and not the larger community. There are exceptions where a library seeks out community involvement and code updates (ex. [Decanter](https://github.com/LaunchPadLab/decanter)), but that is part of a conscious and intentional decision by the Opex team.
 
