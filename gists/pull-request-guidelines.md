@@ -16,6 +16,7 @@ Guidelines for creating pull requests at LaunchPad Lab for three types of users:
 - Provide screenshots and instructions to reproduce / find style issues if there are outstanding items that require design assistance
 - Add guidance about what the reviewer(s) should focus on
 - Document what the QA tester should be testing
+- Review the diff and ensure that all changes are relevant and intentional and address all in-scope requirements
 - Open the review app to make sure that there are no critical errors **before** assigning for review
 - Merge the PR after approval is received from all assigned reviewers
   - This is **your** responsibility, not the reviewer's
