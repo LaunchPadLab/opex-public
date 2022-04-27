@@ -54,7 +54,7 @@ Things to look for:
 Things to ignore:
 - Anything marked as "out of scope" by the author
 
-## Miscellaneous Nots
+## Miscellaneous Notes
 ### Types of PRs
 In general, there are two types of PRs: Long-Running and Granular. The two should be treated differently to make it easier for your teammates.
 
@@ -67,5 +67,5 @@ A long-running PR may contain multiple features or an epic. Some best practices 
 
 #### Granular
 A granular PR may contain a single feature or even a _slice_ of a single feature. Some best practices include:
-- Make sure you are very explicitly about what is out of scope
+- Make sure you are very explicit about what is out of scope
 - Avoid this approach on quick projects since a reviewer's feedback could be blocking
