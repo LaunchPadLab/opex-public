@@ -15,11 +15,12 @@ Guidelines for creating pull requests at LaunchPad Lab for three types of users:
 - Specifically call out items / features that are out of scope
 - Provide screenshots and instructions to reproduce / find style issues if there are outstanding items that require design assistance
 - Add guidance about what the reviewer(s) should focus on
-- Document what the QA tester should be testing
+- Document what the QA tester should be testing (or provide a link to where this information is documented e.g., Asana)
 - Review the diff and ensure that all changes are relevant and intentional and address all in-scope requirements
-- Open the review app to make sure that there are no critical errors **before** assigning for review
+- If the environment has review apps, open the review app to make sure that there are no critical errors **before** assigning for review
+  - Otherwise, make sure to test all of the changes locally or in a developer sandbox
 - Merge the PR after approval is received from all assigned reviewers
-  - This is **your** responsibility, not the reviewer's
+  - This is typically **your** responsibility, not the reviewer's, but this process may fall to the reviewer depending on your team agreement and/or project timing (e.g., right before a deployment)
 
 ## Reviewers
 There are some guiding principles that _all_ reviewers should abide by:
