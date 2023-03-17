@@ -40,7 +40,9 @@ If you are developing and want to see the results in a local client application:
 * Link the local library:
   * `yarn link` in the package directory
   * `yarn link package-name` in the client directory
-* Run the watchful build: `yarn start`
+* Run the watchful build:
+  * `yarn start` in the package directory
+  * `yarn start` in the client directory
 
 Changes will be immediately compiled and available to the client application.
 
