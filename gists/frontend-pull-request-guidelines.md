@@ -68,7 +68,7 @@ This document details guidelines for reviewing frontend (especially LPL React-fl
   }) // Anthony Soprano Jr
   ```
 - If there is a particularly complicated util / functionality, check to see if [lodash](https://lodash.com/docs/4.17.15) has something that fits your needs. If not, write unit tests
-- If something is no longer being used, it's better to delete it! The more code you have, the more bugs you have.
+- If something is no longer being used, it's better to delete it! The more code you have, the more bugs you have
   - This applies to files, functions, lines of code, styles, and comments. If it turns out that you need it, you can retrieve it from the Git history
 - Avoid [variable shadowing](https://en.wikipedia.org/wiki/Variable_shadowing) (i.e., using the same name for variables in different scopes). This leads to code that can be hard to read and defects that are difficult to diagnose
 - Duplicating context or sowing confusion with a variable name (e.g., using a singular `participant` variable for an array of participants)
