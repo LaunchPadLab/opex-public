@@ -3,6 +3,7 @@ This document details guidelines for reviewing frontend (especially LPL React-fl
 
 ## HTML
 - The default [`type` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type) for a button is `submit`. If `type="button"` is not explicitly declared and that button is included within a form, it can submit the form (e.g., a reset button). It's best practice to always include the `type` attribute, which usually will be `button`
+  - Example: https://codesandbox.io/s/button-type-woes-zl0wm2
 - Images should **always** have an `alt` attribute declared, but they **shouldn't always** include text
   - [Decorative images](https://www.w3.org/WAI/tutorials/images/decorative/) that don't provide additional information should be hidden from assistive technologies via an empty `alt` attribute (i.e., `alt=""`). The behavior this adds is distinctly different than not including an `alt` attribute at all
     - This needs to be handled a bit differently for [inline svgs](https://css-tricks.com/accessible-svgs/), most commonly via `aria-hidden="true"`
