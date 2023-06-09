@@ -15,7 +15,7 @@ This document details guidelines for reviewing frontend (especially LPL React-fl
 
 ## JavaScript
 - Avoid hasty abstractions. It's ok to repeat code and wait until you have more information to have a proper design for a reusable function or component. Don Roberts's [rule of 3](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)) comes in handy
-- Utils should follow the [single-responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle). If a util requires several distinct actions in service of a single purpose, those should be broken up into "private" local functions for clarity.
+- Utils should follow the [single-responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle). If a util requires several distinct actions in service of a single purpose, those should be broken up into "private" local functions for clarity
   ```js
   /* Subpar */
   function safeAdd(numA, numB) {
