@@ -16,57 +16,57 @@ This document details guidelines for reviewing frontend (especially LPL React-fl
 ## JavaScript
 - Avoid hasty abstractions. It's ok to repeat code and wait until you have more information to have a proper design for a reusable function or component. Don Roberts's [rule of 3](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)) comes in handy
 - Utils should follow the [single-responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle). If a util requires several distinct actions in service of a single purpose, those should be broken up into "private" local functions for clarity.
-```js
-/* Subpar */
-function safeAdd(numA, numB) {
-  let sanitizedNumA = Number(numA)
-  let sanitizedNumB = Number(numB)
-  if (isNaN(sanitizedNumA))
-    sanitizedNumA = 0
-  if (isNaN(sanitizedNumB))
-    sanitizedNumB = 0
+  ```js
+  /* Subpar */
+  function safeAdd(numA, numB) {
+    let sanitizedNumA = Number(numA)
+    let sanitizedNumB = Number(numB)
+    if (isNaN(sanitizedNumA))
+      sanitizedNumA = 0
+    if (isNaN(sanitizedNumB))
+      sanitizedNumB = 0
 
-  return sanitizedNumA + sanitizedNumB
-}
+    return sanitizedNumA + sanitizedNumB
+  }
 
-export default safeAdd
+  export default safeAdd
 
-/* Better */
-function safeAdd(numA, numB) {
-  return sanitize(numA) + sanitize(numB)
-}
+  /* Better */
+  function safeAdd(numA, numB) {
+    return sanitize(numA) + sanitize(numB)
+  }
 
-function sanitize(num) {
-  let sanitized = Number(num)
-  return isNaN(sanitized) ? 0 : sanitized
-}
+  function sanitize(num) {
+    let sanitized = Number(num)
+    return isNaN(sanitized) ? 0 : sanitized
+  }
 
-export default safeAdd
-```
+  export default safeAdd
+  ```
 - If a function accepts more than 3 arguments, the order of the arguments is not intuitive, or some of the arguments are optional, then use named arguments over positional arguments
-```js
-/* Subpar */
-function formatName(firstName, middleName, lastName, title, suffix) {
-  return [
-    title, firstName, middleName, lastName, suffix
-  ].filter(Boolean).join(" ")
-}
+  ```js
+  /* Subpar */
+  function formatName(firstName, middleName, lastName, title, suffix) {
+    return [
+      title, firstName, middleName, lastName, suffix
+    ].filter(Boolean).join(" ")
+  }
 
-formatName("Anthony", null, "Soprano", null, "Jr") // Anthony Soprano Jr
+  formatName("Anthony", null, "Soprano", null, "Jr") // Anthony Soprano Jr
 
-/* Better */
-function formatName({ firstName, middleName, lastName, title, suffix }) {
-  return [
-    title, firstName, middleName, lastName, suffix
-  ].filter(Boolean).join(" ")
-}
+  /* Better */
+  function formatName({ firstName, middleName, lastName, title, suffix }) {
+    return [
+      title, firstName, middleName, lastName, suffix
+    ].filter(Boolean).join(" ")
+  }
 
-formatName({
-  title: "Jr",
-  firstName: "Anthony",
-  lastName: "Soprano"
-}) // Anthony Soprano Jr
-```
+  formatName({
+    title: "Jr",
+    firstName: "Anthony",
+    lastName: "Soprano"
+  }) // Anthony Soprano Jr
+  ```
 - If there is a particularly complicated util / functionality, check to see if [lodash](https://lodash.com/docs/4.17.15) has something that fits your needs. If not, write unit tests
 - If something is no longer being used, it's better to delete it! The more code you have, the more bugs you have.
   - This applies to files, functions, lines of code, styles, and comments. If it turns out that you need it, you can retrieve it from the Git history
