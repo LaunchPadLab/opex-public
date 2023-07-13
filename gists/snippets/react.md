@@ -117,6 +117,52 @@ Copy the following into your `javascript.json` snippet file:
 			")(${1:MyFormComponent})"
 		],
 		"description": "LP-Form enhanced Redux-Form form component"
+	},
+
+	"React Formik Component": {
+		"prefix": "reactFormikComponent",
+		"body": [
+			"import React from 'react'",
+			"import PropTypes from 'prop-types'",
+			"import { Formik, Form } from 'formik'",
+			"import * as Yup from 'yup'",
+			"import { SubmitButton } from 'lp-components'",
+			"",
+			"const propTypes = {",
+			"\thandleSubmit: PropTypes.func.isRequired,",
+			"}",
+			"const defaultProps = {}",
+			"",
+			"const BASE_INITIAL_VALUES = {"
+			"}",
+			"const VALIDATION_SCHEMA = Yup.object({",
+			"})",
+			"",
+			"function ${1:MyFormComponent} ({ handleSubmit }) {",
+			"\treturn (",
+			"\t\t<Formik",
+			"\t\t\tinitialValues={BASE_INITIAL_VALUES}",
+			"\t\t\tvalidationSchema={VALIDATION+SCHEMA}",
+			"\t\t\tonSubmit={handleSubmit}"
+			"\t\t>",
+			"\t\t\t{({ isSubmitting }) => ("
+			"\t\t\t\t<Form>",
+			"\t\t\t\t\t$0",
+			"\t\t\t\t\t<SubmitButton submitting={isSubmitting}>"
+			"\t\t\t\t\t\tSubmit",
+			"\t\t\t\t\t</SubmitButton>"
+			"\t\t\t\t</Form>",
+			"\t\t\t)}",
+			"\t\t</Formik>"
+			"\t)",
+			"}",
+			"",
+			"${1:MyFormComponent}.propTypes = propTypes",
+			"${1:MyFormComponent}.defaultProps = defaultProps",
+			"",
+			"export default ${1:MyFormComponent}"
+		],
+		"description": "Formik-based form component"
 	}
 }
 ```

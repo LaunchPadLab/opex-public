@@ -13,6 +13,7 @@ The following projects are "internal open source" at Launchpad. That means that 
 Project | Language | Visibility | Description
 --- | --- | --- | ---
 [Client Template](https://github.com/LaunchPadLab/client-template) | JS, React, Redux | Private | Template app for React/Redux SPAs.
+[Ionic Client Template](https://github.com/LaunchPadLab/ionic-client-template) | JS, React, Redux, Ionic | Private | Template app for Ionic-based React/Redux SPAs.
 [Decanter](https://github.com/LaunchPadLab/decanter) | Ruby, Rails | Public | Gem that makes it easy to transform incoming data before it hits the controller action or model.
 [Flight Readiness Review](https://github.com/LaunchPadLab/flight_readiness_review) | Bash | Private | Utility to set up a macOS laptop for design and development at LaunchPad Lab.
 [Fuel](https://github.com/LaunchPadLab/fuel) (no longer maintained) | Ruby, Rails | Public | Stop developing Rails blogs and start writing your actual blog posts with this dead simple blogging engine for Rails.
@@ -36,6 +37,6 @@ Project | Language | Visibility | Description
 
 ## Gists
 
-One function of Opex is to set standard processes by which we do our work. These processes are documented in the [gists](gists) folder of this repository. 
+One function of Opex is to set standard processes by which we do our work. These processes are documented in the [gists](gists) folder of this repository.
 
 These documents are fairly limited in scope, and there are few of them by design. This prevents information overload and encourages us to encapsulate as many of our best practices as possible in our app template repositories. Still, they may come in handy as a general reference / anti-[bikeshedding](https://css-tricks.com/what-is-bikeshedding) tool.
