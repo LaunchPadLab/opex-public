@@ -15,10 +15,13 @@ This document details guidelines for reviewing frontend (especially LPL React-fl
 
 ## CSS
 - First and foremost, does the page look like it should?
-  - On all in-scope devices? 
+  - On all in-scope devices?
+- Follow project conventions
+  - Casing (e.g., kebab-case vs. camelCase)
+  - Class names (e.g., [BEM](http://getbem.com/introduction/), utility classes (à la Tailwind))
+  - File structure
 - If you see an `!important` in the diff, ask the author about it. 95% of the time you shouldn't need it
 - If a color is used, check to see if it has already been defined as a variable. If it hasn't, ask the author if it _should_ be a known color
-- Follow project conventions for class names (e.g., [BEM](http://getbem.com/introduction/), casing)
 - Make sure class names make sense, are intention-revealing, and make sense in the context where they're being used
 - Make sure properties have valid values and are being used correctly. For example, `height` on an inline element does nothing
 - Prefer the usage of shorthand properties (if applicable)
