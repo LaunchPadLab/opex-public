@@ -13,6 +13,40 @@ This document details guidelines for reviewing frontend (especially LPL React-fl
   - Do not choose a heading level based on styling – use CSS to style the semantically appropriate heading level for that particular page
 - Users should be able to achieve the same (or similarly equivalent) functionality by only using a keyboard or a screenreader
 
+## CSS
+- First and foremost, does the page look like it should?
+  - On all in-scope devices?
+- Follow project conventions
+  - Casing (e.g., kebab-case vs. camelCase)
+  - Class names (e.g., [BEM](http://getbem.com/introduction/), utility classes (à la Tailwind))
+  - File structure
+- If you see an `!important` in the diff, ask the author about it. 95% of the time you shouldn't need it
+- If a color is used, check to see if it has already been defined as a variable. If it hasn't, ask the author if it _should_ be a known color
+- Make sure class names make sense, are intention-revealing, and make sense in the context where they're being used
+- Make sure properties have valid values and are being used correctly. For example, `height` on an inline element does nothing
+- Prefer the usage of shorthand properties (if applicable)
+  ```scss
+  // Subpar
+  .custom-class {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  // Better
+  .custom-class {
+    padding: 0 10px;
+  }
+  ```
+- Avoid hardcoded sizes, when possible. In some instances, it might make sense to explicitly set padding or margin values in `px` when the values _shouldn't_ scale with font-size. However, in most cases units like `em`, `rem`, `%`, `vh`, and `vw` are better for responsiveness and accessibility
+  - [Never set `font-size` using `px`](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/)
+- Review the scope of changes/additions to existing rules
+  - If a rule is too vague (e.g., applied to all elements of a class without any nesting), it could affect other existing areas of the application inadvertently
+- Review the need to add a `z-index` _and_ its value. Most of the time, you'll find that a z-index of 1 or 2 will suffice
+  - In some cases, changing the order of HTML elements will suffice
+  - In other cases, newer properties like [`isolation: isolate`](https://developer.mozilla.org/en-US/docs/Web/CSS/isolation) can be used to create a new stacking context, which isolates the change and helps mitigate against the 999999s
+
 ## JavaScript
 - Avoid hasty abstractions. It's ok to repeat code and wait until you have more information to have a proper design for a reusable function or component. Don Roberts's [rule of 3](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)) comes in handy
 - Utils should follow the [single-responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle). If a util requires several distinct actions in service of a single purpose, those should be broken up into "private" local functions for clarity
