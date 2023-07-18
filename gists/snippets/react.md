@@ -133,7 +133,7 @@ Copy the following into your `javascript.json` snippet file:
 			"}",
 			"const defaultProps = {}",
 			"",
-			"const BASE_INITIAL_VALUES = {"
+			"const BASE_INITIAL_VALUES = {",
 			"}",
 			"const VALIDATION_SCHEMA = Yup.object({",
 			"})",
@@ -142,25 +142,25 @@ Copy the following into your `javascript.json` snippet file:
 			"\treturn (",
 			"\t\t<Formik",
 			"\t\t\tinitialValues={BASE_INITIAL_VALUES}",
-			"\t\t\tvalidationSchema={VALIDATION+SCHEMA}",
-			"\t\t\tonSubmit={handleSubmit}"
+			"\t\t\tvalidationSchema={VALIDATION_SCHEMA}",
+			"\t\t\tonSubmit={handleSubmit}",
 			"\t\t>",
-			"\t\t\t{({ isSubmitting }) => ("
+			"\t\t\t{({ isSubmitting }) => (",
 			"\t\t\t\t<Form>",
 			"\t\t\t\t\t$0",
-			"\t\t\t\t\t<SubmitButton submitting={isSubmitting}>"
+			"\t\t\t\t\t<SubmitButton submitting={isSubmitting}>",
 			"\t\t\t\t\t\tSubmit",
-			"\t\t\t\t\t</SubmitButton>"
+			"\t\t\t\t\t</SubmitButton>",
 			"\t\t\t\t</Form>",
 			"\t\t\t)}",
-			"\t\t</Formik>"
+			"\t\t</Formik>",
 			"\t)",
 			"}",
 			"",
 			"${1:MyFormComponent}.propTypes = propTypes",
 			"${1:MyFormComponent}.defaultProps = defaultProps",
 			"",
-			"export default ${1:MyFormComponent}"
+			"export default ${1:MyFormComponent}",
 		],
 		"description": "Formik-based form component"
 	}
