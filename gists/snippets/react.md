@@ -53,10 +53,10 @@ Copy the following into your `javascriptreact.json` snippet file:
 		"body": [
 			"// import { useEffect } from 'react'",
 			"// import PropTypes from 'prop-types'",
-			"// import * as Types from '#main/types.js'",
+			"// import * as Types from '@/main/types.js'",
 			"// import { useDispatch, useSelector } from 'react-redux'",
 			"// import { selectors } from '../slice.js'",
-			"// import * as apiActions from '#main/apiActions.js'",
+			"// import * as apiActions from '@/main/apiActions.js'",
 			"",
 			"const propTypes = {}",
 			"const defaultProps = {}",
