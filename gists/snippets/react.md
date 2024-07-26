@@ -2,22 +2,22 @@
 
 Defines snippets for common `React` components:
 
-- React-redux components (views)
-- Function UI components
-- Form components
+- React-redux components (typically responsible for loading data in a "View")
+- Function components (a composable, reusable block of functionality)
 
 ### Requirements:
 
-- The functional component snippet uses `React.memo`, which was added in React v16.6.0. If you're using an earlier version of React, this optimization can be safely removed.
+- All snippets assume that you are using the latest Vite-powered version of the client template (>= v14.0.0)
+- The react-redux snippet assumes you are using [Redux Toolkit](https://redux-toolkit.js.org/)
 
 ## VS Code
 
-Copy the following into your `javascript.json` snippet file:
+Copy the following into your `javascriptreact.json` snippet file:
 
 ```
 {
 	/*
-	// Place your snippets for JavaScript here. Each snippet is defined under a snippet name and has a prefix, body and
+	// Place your snippets for javascriptreact here. Each snippet is defined under a snippet name and has a prefix, body and
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
 	// same ids are connected.
@@ -26,7 +26,6 @@ Copy the following into your `javascript.json` snippet file:
 	"React Functional Component": {
 		"prefix": "reactFunctionalComponent",
 		"body": [
-			"import React from 'react'",
 			"// import PropTypes from 'prop-types'",
 			"import exact from 'prop-types-exact'",
 			"",
@@ -44,7 +43,7 @@ Copy the following into your `javascript.json` snippet file:
 			"${1:MyComponent}.propTypes = exact(propTypes)",
 			"${1:MyComponent}.defaultProps = defaultProps",
 			"",
-			"export default React.memo(${1:MyComponent})"
+			"export default ${1:MyComponent}"
 		],
 		"description": "Stateless React component"
 	},
@@ -52,12 +51,12 @@ Copy the following into your `javascript.json` snippet file:
 	"React Redux Component": {
 		"prefix": "reactReduxComponent",
 		"body": [
-			"import React /* , { useEffect } */ from 'react'",
+			"// import { useEffect } from 'react'",
 			"// import PropTypes from 'prop-types'",
-			"// import * as Types from 'types'",
+			"// import * as Types from '@/main/types.js'",
 			"// import { useDispatch, useSelector } from 'react-redux'",
-			"// import { selectors } from '../slice'",
-			"// import * as apiActions from 'api-actions'",
+			"// import { selectors } from '../slice.js'",
+			"// import * as apiActions from '@/main/apiActions.js'",
 			"",
 			"const propTypes = {}",
 			"const defaultProps = {}",
@@ -78,45 +77,5 @@ Copy the following into your `javascript.json` snippet file:
 		],
 		"description": "Redux connected React component"
 	},
-
-	"React LP Form Component": {
-		"prefix": "reactLpFormComponent",
-		"body": [
-			"import React from 'react'",
-			"import PropTypes from 'prop-types'",
-			"import { compose } from 'recompose'",
-			"import { lpForm } from 'lp-form'",
-			"import { SubmitButton } from 'lp-components'",
-			"// import { Field } from 'redux-form'",
-			"",
-			"const propTypes = {",
-			"\thandleSubmit: PropTypes.func.isRequired,",
-			"\tsubmitting: PropTypes.bool.isRequired,",
-			"}",
-			"const defaultProps = {}",
-			"",
-			"function ${1:MyFormComponent} ({ handleSubmit, submitting }) {",
-			"\treturn (",
-			"\t\t<form onSubmit={ handleSubmit } noValidate>",
-			"\t\t\t$0",
-			"\t\t\t<SubmitButton submitting={submitting}>",
-			"\t\t\t\tSubmit",
-			"\t\t\t</SubmitButton>",
-			"\t\t</form>",
-			"\t)",
-			"}",
-			"",
-			"${1:MyFormComponent}.propTypes = propTypes",
-			"${1:MyFormComponent}.defaultProps = defaultProps",
-			"",
-			"export default compose(",
-			"\tlpForm({",
-			"\t\tname: '${1:MyFormComponent}',",
-			"\t\tconstraints: {},",
-			"}),",
-			")(${1:MyFormComponent})"
-		],
-		"description": "LP-Form enhanced Redux-Form form component"
-	}
 }
 ```
