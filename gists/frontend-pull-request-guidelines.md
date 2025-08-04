@@ -1,23 +1,6 @@
 # Frontend Pull Request Guidelines
 This document details guidelines for reviewing frontend (especially LPL React-flavored) code. Some of these suggestions may apply more broadly to software development in general, but are mentioned here specifically based on the frequency with which they have been observed in client-side code.
 
-## General
-- Strive for consistency. Review other areas of the code for patterns, copy and paste, make things easier for yourself.
-  - However, don't do it blindly. If you know of a better way, bring it up to the team. Maybe we should change the pattern holistically.
-- Continuously look ahead at tasks/features that are coming up later, and think about how that might affect the task you're working on
-- While comments within the code can be extremely helpful, try not to add them when your code is already clear / self documenting. If you can make some small changes (e.g., variable or function naming) to remove the need for a comment, do that!
-  - And if you make code changes around existing comments, make sure to update those as well to keep them accurate
-- Leave GitHub comments on your own code changes. That forces you to look over all the file changes closely. You might notice something you didn't mean to commit, and you can explain why you made certain decisions to help the reviewer
-- Apply your new learnings to all code changes. When implementing PR feedback, check all of your code changes again to see if the feedback could apply somewhere else
-- Our automatic formatting with Prettier sets tabs equal to 2 spaces. To see this spacing correctly in GitHub, make sure your tab size preference is set to 2 spaces
-  - In your GitHub profile, select "Appearance", find the "Tab size preference" setting and set this to "2"
-- [Hiding whitespace changes](https://share.zight.com/YEu6mj8G) when reviewing File Changes in GitHub helps real changes stand out more clearly
-
-## Branch Maintenance
-- Try to keep our repos clean. Once branches are merged in, make sure they're deleted (should be automatic if merged in through a GitHub PR). If you've abandoned a branch (including Closed the PR in GitHub), but it was already pushed up to origin, delete that branch from origin
-- Try to keep branches in sync without merge commits. When merging `dev` up to `staging` and `staging` up to `main`, use [fast-forward merges](https://stackoverflow.com/a/29673993) without separate commits
-- Make sure processes are set with the team around when and how to merge your changes past the `dev` branch
-
 ## HTML
 - The default [`type` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type) for a button is `submit`. If `type="button"` is not explicitly declared and that button is included within a form, it can submit the form (e.g., a reset button). It's best practice to always include the `type` attribute, which usually will be `button`
   - Example: https://codesandbox.io/s/button-type-woes-zl0wm2
@@ -125,10 +108,9 @@ This document details guidelines for reviewing frontend (especially LPL React-fl
 - Duplicating context or sowing confusion with a variable name (e.g., using a singular `participant` variable for an array of participants)
   - Refer to the [variable naming cheatsheet](https://github.com/kettanaito/naming-cheatsheet) for more examples
 - You probably don't need [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce). Most applications of reduce can be simplified and more performant when using [local mutation](https://typeofnan.dev/mutation-isnt-always-bad-in-javascript/)
-- Set optional booleans to default to `false` instead of `true`. Optional boolean props should need to be actively set, not enabled by default. If necessary, you can flop the logic (e.g., use `hide...` instead of `show...`, or `disable...` instead of `enable...`).
+- Set optional booleans to default to `false` instead of `true`. Optional boolean props should need to be actively set, not enabled by default. If necessary, you can flip the logic (e.g., use `hide...` instead of `show...`, or `disable...` instead of `enable...`)
 
 ## React
-- Start from the boilerplate code from [react.md](./snippets/react.md)
 - You should virtually **never** add an `onClick` prop to anything other than a `button` element
   - The `button` element contains several accessibility features out-of-the-box, including keyboard support. Creating custom markup isn't worth it and requires a lot of additional attributes to reach parity with user's expectations
 - You probably don't need `useEffect` (unless you're fetching data). Setting state in a `useEffect` is typically code smell for a use case for deriving the state, instead of syncing it
@@ -146,12 +128,7 @@ This document details guidelines for reviewing frontend (especially LPL React-fl
   - In general, double check your casing to confirm each is used appropriately
 - Never mutate a value held in the Redux store
   - https://redux.js.org/faq/immutable-data#why-is-immutability-required-by-redux
-- Keep your code clean. Remove empty brackets (or <React.Fragment>) if you make changes and there is now only one direct child element
-- Think about using "Provider" type components. We typically use these to make sure any child views have the data they need by wrapping those child views with the provider. The provider handles fetching data and storing it in redux. It can also make sure no child views are rendered until that data is available
-  - Here are some examples:
-    - ATBS - [FinancialPerformanceYearsProvider](https://github.com/LaunchPadLab/atbs-apollo-client/blob/92b9f77cd4433ebd4769342df2acec900748ca29/src/js/main/financial-performance/providers/FinancialPerformanceYearsProvider.js)
-    - Sea Tow - [AccountProvider](https://github.com/LaunchPadLab/sea-tow-client/blob/7e41139c7e12325de75b071d8814913d9a875338/src/js/main/account/components/AccountProvider.js)
-    - Senior Planet - [CategoriesProvider](https://github.com/LaunchPadLab/senior-planet-client/blob/da6103b1fb64162b0660f700d9b8c016e8f75f5f/src/js/components/CategoriesProvider.jsx)
+- Remove empty brackets (or <React.Fragment>) if you make changes and there is now only one direct child element
 - If you find you're reusing, or want to abstract out some complicated logic that includes hooks, create your own! Follow the convention of naming it with the "use" prefix and have it return useful state and/or functions. Then, use it in your components like you would any other hook
 - When creating a navigation link for in-app routing, if you're only changing the last segment of the path, only the last segment needs to be provided. This can be useful when trying to manage long paths or those with unique identifiers
   ```js
@@ -161,7 +138,7 @@ This document details guidelines for reviewing frontend (especially LPL React-fl
   /* Better */
   <Link to="appliances">Appliances</Link>  
   ```
-- Use computed selectors in redux slices to handle reused or complicated logic that needs to update immediately if another piece of state changes
+- Use computed selectors in redux slices using [`createSelector`](https://redux.js.org/usage/deriving-data-selectors#createselector-overview) to handle reused or complicated logic that needs to update immediately if another piece of state changes
   ```js
   /* Example - Dry Run and Estimate Only are two options that can be enabled at any time in the app */
   selectors.minimumPhotoCount = createSelector(
