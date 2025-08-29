@@ -108,6 +108,7 @@ This document details guidelines for reviewing frontend (especially LPL React-fl
 - Duplicating context or sowing confusion with a variable name (e.g., using a singular `participant` variable for an array of participants)
   - Refer to the [variable naming cheatsheet](https://github.com/kettanaito/naming-cheatsheet) for more examples
 - You probably don't need [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce). Most applications of reduce can be simplified and more performant when using [local mutation](https://typeofnan.dev/mutation-isnt-always-bad-in-javascript/)
+- Set optional booleans to default to `false` instead of `true`. Optional boolean props should need to be actively set, not enabled by default. If necessary, you can flip the logic (e.g., use `hide...` instead of `show...`, or `disable...` instead of `enable...`)
 
 ## React
 - You should virtually **never** add an `onClick` prop to anything other than a `button` element
@@ -124,5 +125,30 @@ This document details guidelines for reviewing frontend (especially LPL React-fl
   - Reevaluate your decision to create a separate component or look for other ways to compose the functionality together (e.g., use [`children`](https://react.dev/learn/passing-props-to-a-component#passing-jsx-as-children), move state down, use the [render prop pattern](https://reactjs.org/docs/render-props.html))
 - If you're referencing a hardcoded string (or enumeration of strings), place them in `config.js` and reference them via the aliased `config` import location
   - By convention, constants are cased using SCREAMING_SNAKE_CASE
+  - In general, double check your casing to confirm each is used appropriately
 - Never mutate a value held in the Redux store
   - https://redux.js.org/faq/immutable-data#why-is-immutability-required-by-redux
+- Remove empty brackets (or <React.Fragment>) if you make changes and there is now only one direct child element
+- If you find you're reusing, or want to abstract out some complicated logic that includes hooks, create your own! Follow the convention of naming it with the "use" prefix and have it return useful state and/or functions. Then, use it in your components like you would any other hook
+- When creating a navigation link for in-app routing, if you're only changing the last segment of the path, only the last segment needs to be provided. This can be useful when trying to manage long paths or those with unique identifiers
+  ```js
+  /* Subpar */
+  <Link to="/store/12345/products/appliances">Appliances</Link>
+  
+  /* Better */
+  <Link to="appliances">Appliances</Link>  
+  ```
+- Use computed selectors in redux slices using [`createSelector`](https://redux.js.org/usage/deriving-data-selectors#createselector-overview) to handle reused or complicated logic that needs to update immediately if another piece of state changes
+  ```js
+  /* Example - Dry Run and Estimate Only are two options that can be enabled at any time in the app */
+  selectors.minimumPhotoCount = createSelector(
+    [selectors.cart, selectors.selectedServiceAppointment],
+    (cart, selectedServiceAppointment) => {
+      if (!cart || !selectedServiceAppointment) return null
+      
+      return cart.isDryRun || cart.isEstimateOnly
+        ? DRY_RUN_OR_ESTIMATE_ONLY_MINIMUM_PHOTO_COUNT
+        : selectedServiceAppointment.minimumPhotoCount
+    },
+  )
+  ```
