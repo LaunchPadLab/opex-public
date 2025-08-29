@@ -87,7 +87,7 @@ For JavaScript projects, our automatic formatting with Prettier sets tabs equal 
 
 ### Branch Maintenance
 Try to keep our repos clean to make it easy to read through commit history and understand what's in active development
-- Once branches are merged in, make sure they're deleted. If you've abandoned a branch (including Closed the PR in GitHub), but it was already pushed up to origin, delete that branch from origin
+- Once branches are merged in, make sure they're deleted. If you've abandoned a branch and no longer need to reference it (including Closed the PR in GitHub), delete that branch from origin
   - Follow the [Project Setup Guidelines](https://github.com/LaunchPadLab/client-template/blob/main/PROJECT_SETUP_CHECKLIST.md#options) to automatically delete head branches when they're merged through a GitHub PR
 - Make sure processes are set with the team around when and how to merge your changes past the `dev` branch
   - One option is to keep branches in sync without merge commits. This means when merging `dev` into `staging`, for example, both branches will be on the same commit to make it clear they are the same code. To implement this strategy, when merging `dev` up to `staging` and `staging` up to `main`, use [fast-forward merges](https://stackoverflow.com/a/29673993) by merging in the terminal and not through a GitHub PR
